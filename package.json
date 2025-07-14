@@ -28,14 +28,15 @@
     "react-dom": "^17.0.1"
   },
   "scripts": {
-    "start": "webpack serve --config=demo/webpack.config.js",
-    "build:demo": "webpack --config=demo/webpack.config.js",
-    "build:lib": "webpack",
-    "predeploy": "npm run build:demo",
-    "deploy": "gh-pages -d demo/public",
-    "prepack": "npm run build:lib",
-    "lint": "eslint src/*.jsx --fix"
-  },
+  "start": "webpack serve --config=demo/webpack.config.js",
+  "build": "npm run build:demo",
+  "build:demo": "webpack --config=demo/webpack.config.js",
+  "build:lib": "webpack",
+  "predeploy": "npm run build:demo",
+  "deploy": "gh-pages -d demo/public",
+  "prepack": "npm run build:lib",
+  "lint": "eslint src/*.jsx --fix"
+},
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
